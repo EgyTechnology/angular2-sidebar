@@ -1,7 +1,7 @@
 <div class="skin-black sidebar-mini">
   <div class="wrapper">
     <header class="main-header">
-      <a href="#" class="logo">
+      <a href="#" class="logo" style="border: none;">
         <span class="logo-mini">
           <b>Io</b>Scad
         </span>
@@ -11,9 +11,9 @@
         </span>
       </a>
 
-      <nav class="navbar navbar-static-top" role="navigation">
+      <nav class="navbar navbar-static-top" role="navigation" style="">
               <!-- Sidebar toggle button-->
-              <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+              <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" style="border: none;">
                   <span class="sr-only">Toggle navigation</span>
               </a>
               <!-- Navbar Right Menu -->
@@ -39,7 +39,13 @@
               </div>
           </nav>
     </header>
-  </div>
 
-  <app-sidebar></app-sidebar>
+    <aside class="main-sidebar">
+        <app-sidebar></app-sidebar>
+    </aside>
+
+    <div class="content-wrapper" style="min-height: 901px;">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
